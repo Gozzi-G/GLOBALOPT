@@ -1,0 +1,15 @@
+@mixin titles {
+   color: #2e2e2e;
+   font-family: Roboto;
+   font-size: 26px;
+   font-weight: 700;
+   line-height: 23px;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+@mixin divider {
+   width: 148px;
+   border-color: $main-color;
+   // margin: 0 auto;
+}

@@ -1,12 +1,26 @@
 * {
-   font-family: 'Roboto Condensed','Roboto', sans-serif;
+   font-family: 'Roboto', sans-serif;
 }
+
+* {
+   font-family: 'Roboto Condensed', sans-serif;
+}
+
 
 .container {
    padding: 0;
 }
 
+
+@import "base/mixins";
 @import "base/varaibles";
 @import "blocks/promo";
 @import "blocks/header";
 @import "blocks/buttons";
+@import "blocks/title";
+@import "blocks/advantages";
+@import "blocks/description";
+@import "blocks/presentation";
+@import "blocks/divider";
+@import "blocks/representative";
+@import "blocks/price";

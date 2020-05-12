@@ -1,0 +1,18 @@
+.description {
+   width: 100%;
+   &__title {
+      color: $main-color;
+      font-family: "Roboto";
+      font-size: 16px;
+      font-weight: 700;
+   }
+   &__text {
+      margin-top: 9px;
+      color: #3a3a3a;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+   }
+
+}

@@ -1,0 +1,26 @@
+.representative {
+   min-height: 342px;
+   padding: 58px 0 75px 0;
+   background: url("../../img/agent.jpg");
+   text-align: center;
+   &__img {
+      display: block;
+      margin: 0 auto;
+   }
+   &__title {
+      margin-top: 20px;
+      color: #ffffff;
+      font-family: Roboto;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 23px;
+   }
+   &__subtitle {
+      margin-top: 22px;
+      color: #ffffff;
+      font-family: Roboto;
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 27px;
+   }
+}

@@ -11,4 +11,18 @@
    border: none;
    border-radius: 19px;
    cursor: pointer;
+   &_main {
+      display: block;
+      width: 230px;
+      height: 57px;
+      border-radius: 27px;
+      margin: 0 auto;
+      margin-top: 39px;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 17.35px;
+   }
+   &__price{
+      margin-top: 25px;
+   }
 }
