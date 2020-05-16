@@ -6,10 +6,10 @@
    line-height: 23px;
    text-transform: uppercase;
    text-align: center;
+   margin-bottom: 0;
 }
 
 @mixin divider {
    width: 148px;
    border-color: $main-color;
-   // margin: 0 auto;
 }

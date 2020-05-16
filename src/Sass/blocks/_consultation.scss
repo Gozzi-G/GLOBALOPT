@@ -1,0 +1,15 @@
+.consultation {
+   min-height: 372px;
+   padding: 28px 0 58px 0;
+
+   &__button-box {
+      padding: 0 11px;
+      width: 202px;
+      background-color: #fff;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -22px;
+   }
+}

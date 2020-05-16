@@ -1,8 +1,13 @@
 .representative {
    min-height: 342px;
    padding: 58px 0 75px 0;
-   background: url("../../img/agent.jpg");
    text-align: center;
+   &_agent {
+      background: url("../../img/agent.jpg");
+   }
+   &_managers{
+      background: url("../../img/manager.jpg");
+   }
    &__img {
       display: block;
       margin: 0 auto;
