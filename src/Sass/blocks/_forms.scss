@@ -1,5 +1,7 @@
-.feed-form {
-   margin-top: 20px;
+.form {
+   &_consultation {
+      margin-top: 20px;
+   }
    &__border {
       position: relative;
       border: 1px solid #dfdfdf;
@@ -10,11 +12,19 @@
       max-width: 122px;
       text-align: center;
    }
+
    &__wrapper {
       margin-top: 9px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+
       input {
+         color: #101010;
+         font-family: Roboto;
+         font-size: 13px;
+         font-weight: 300;
+         line-height: 24px;
          margin: 0 3px;
          padding-left: 28px;
          width: 268px;
@@ -23,6 +33,21 @@
          border-radius: 18px;
       }
    }
-   
+   &_questions {
+      margin-top: 18px;
+      textarea {
+         margin-top: 8px;
+         margin-bottom: 17px;
+         width: 813px;
+         height: 71px;
+         resize: none;
+         padding-top: 18px;
+         padding-left: 26px;
+         color: #616467;
+         font-family: Roboto;
+         font-size: 13px;
+         font-weight: 300;
+      }
+   }
 
 }

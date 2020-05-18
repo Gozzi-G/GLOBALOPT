@@ -1,0 +1,101 @@
+.carousel {
+   margin-top: 31px;
+   max-height: 245px;
+   &__inner {
+      max-width: 100%;
+      position: relative;
+      margin: 0 auto;
+   }
+   &__img {
+      max-width: 102px;
+      margin: 0 auto;
+   }
+   &__item {
+      margin: 0 auto;
+      max-width: 601px;
+      text-align: center;
+   }
+   &__name {
+      margin-top: 19px;
+      font-family: "Roboto - Bold";
+      font-size: 18px;
+      font-weight: 700;
+   }
+   &__text {
+      color: #3a3a3a;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22.01px;
+   }
+
+   /* Слайдер */
+   .slick-slider {}
+
+   /* Слайдер запущен */
+   .slick-slider.slick-initialized {}
+
+   /* Слайдер с точками */
+   .slick-slider.slick-dotted {}
+
+   /* Ограничивающая оболочка */
+   .slick-list {}
+
+   /* Лента слайдов */
+   .slick-track {
+      display: flex;
+   }
+
+   /* Слайд */
+   .slick-slide {}
+
+   /* Слайд активный (показывается) */
+   .slick-slide.slick-active {}
+
+   /* Слайд основной */
+   .slick-slide.slick-current {}
+
+   /* Слайд по центру */
+   .slick-slide.slick-center {}
+
+   /* Клонированный слайд */
+   .slick-slide.slick-cloned {}
+
+   /* Стрелка */
+   .slick-arrow {
+      position: absolute;
+      top: 30px;
+      z-index: 10;
+      font-size: 0;
+      width: 14px;
+      height: 46px;
+      border: none;
+      outline: none;
+   }
+
+   /* Стрелка влево */
+   .slick-arrow.slick-prev {
+      left: 825px;
+      background: url(../../img/feedback/arrow_left.png);
+   }
+
+   /* Стрелка вправо */
+   .slick-arrow.slick-next {
+      right: 825px;
+      background: url(../../img/feedback/arrow_right.png);
+   }
+
+   /* Стрелка не активная */
+   .slick-arrow.slick-disabled {}
+
+   /* Точки (булиты) */
+   .slick-dots {}
+
+   .slick-dots li {}
+
+   /* Активная точка */
+   .slick-dots li.slick-active {}
+
+   /* Элемент точки */
+   .slick-dots li button {}
+}

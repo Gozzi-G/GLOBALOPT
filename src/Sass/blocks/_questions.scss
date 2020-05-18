@@ -1,0 +1,32 @@
+.questions {
+   min-height: 438px;
+   padding: 62px 0 79px 0;
+   background: url(../../img/questions.jpg);
+   &__box {
+      background-color: rgba($color: #fff, $alpha: .7);
+      max-width: 896px;
+      height: 297px;
+      margin: 0 auto;
+   }
+   &__head {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 68px;
+      background-color: #25333c;
+      font-family: Roboto;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-align: center;
+   }
+   &__title {
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 19px;
+   }
+   &__subtitle {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+   }
+}
