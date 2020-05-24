@@ -100,6 +100,7 @@
     //адаптация блока promo
     .promo {
         padding-top: 0;
+        // фиксирую позицию бэкграунда
         .hamburger_wrap {
             display: block;
             width: 100%;
@@ -109,6 +110,7 @@
                 position: relative;
                 background-color: rgba($color: #000000, $alpha: 0.4);
                 height: 40px;
+                //гамбургер
                 .hamburger {
                     display: block;
                     position: absolute;
@@ -120,14 +122,27 @@
                         display: block;
                         height: 2px;
                         background-color: #fff;
-                        margin-top: 6px;
-                        &:nth-child(1) {
-                            margin-top: 0;
+                        margin-bottom: 4px;
+                        &:nth-child(3) {
+                            margin-bottom: 0;
                         }
                     }
+                    &_active {
+                        span {
+                            margin-bottom:-2px;
+                            &:nth-child(1) {
+                                transform: rotate(-45deg);
+                            }
+                            &:nth-child(2) {
+                                display: none;
+                            }
+                            &:nth-child(3) {
+                                transform: rotate(45deg);
+                            }
+                        }       
+                    }
                 }
-            }
-            
+            }    
         }
         .header {
             &__logo {
@@ -163,7 +178,50 @@
             }
         }
         &__title {
-            margin-top: 57px;
+            margin-top: 60px;
+            font-size: 20px;
         }
-    }  
+        &__title-main {
+            font-size: 42px;
+        }
+        &__subtitle {
+            font-size: 23px;
+        }
+        &__divider {
+            div {
+               height: 5px;
+               width: 6px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        .container {
+            padding: 0 20px 0 20px;
+        }
+        &__title {
+            margin-top: 60px;
+            font-size: 19px;
+        }
+        &__title-main {
+            font-size: 33px;
+        }
+        &__subtitle {
+            margin-top: 27px;
+            font-size: 19px;
+        }
+        &__divider {
+            display: none;
+        }
+        &__items {
+            // padding: 0 10px 0 10px;
+        }
+        .button_main {
+            width: 182px;
+            height: 43px;
+            font-size: 13px;
+        }
+    }
 }
