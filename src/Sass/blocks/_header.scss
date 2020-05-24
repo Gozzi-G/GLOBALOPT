@@ -2,6 +2,10 @@
    display: flex;
    justify-content: space-between;
 
+   .hamburger {
+      display: none;
+   }
+
    &__logo {
       img {
          width: 100%;

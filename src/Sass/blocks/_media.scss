@@ -1,0 +1,169 @@
+@media (max-width: 1200px) {
+    //адаптация блока promo
+    .promo {
+        padding: 23px 0 65px 0;
+        .header {
+            &__logo {
+                img {
+                   max-width: 65px;
+                }
+             }
+            .button {
+                display: none;
+            }
+            &__nav-item {
+                padding-left: 7px;
+                padding-right: 7px;
+                font-size: 15px;
+                &:hover {
+                   border-right: none;
+                }
+                a {
+                    text-decoration: none;
+                    color: $main-color;
+                }
+             }
+             &__contacts-phone {
+                margin-right: 19px;
+                div {
+                   font-size: 14px;
+                }
+                a {
+                   font-size: 14px;
+                }
+             }
+        }
+    }
+    
+
+}
+
+@media (min-width: 1023px) {
+    //адаптация блока promo
+    .promo {
+        .header {
+            .button {
+                display: block;
+            }
+            &__nav-item {
+                a {
+                    color: #fff;
+                }
+             }
+        }
+    }
+    
+}
+
+@media (max-width: 991px) {
+    //адаптация блока promo
+    .promo {
+        .header {
+            &__nav-item {
+                font-size: 13px;
+            }
+        }
+        &__title {
+            margin-top: 15px;
+            font-size: 21px;
+        }
+        &__title-main {
+            font-size: 56px;
+        }
+        &__subtitle {
+            font-size: 32px;
+        }
+        //адаптация основной кнопки
+        .button_main {
+            width: 210px;
+            height: 50px;
+            font-size: 14px;
+        }
+        &__items {
+            margin-top: 20px;
+        }
+        &__item {
+            margin-top: 15px;
+        }
+        //адаптация разделителя
+        &__divider {
+            div {
+               height: 8px;
+               width: 8px;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 767px) {
+    //адаптация блока promo
+    .promo {
+        padding-top: 0;
+        .hamburger_wrap {
+            display: block;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            .hamburger_fixed {
+                position: relative;
+                background-color: rgba($color: #000000, $alpha: 0.4);
+                height: 40px;
+                .hamburger {
+                    display: block;
+                    position: absolute;
+                    right: 14px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 27px;
+                    span {
+                        display: block;
+                        height: 2px;
+                        background-color: #fff;
+                        margin-top: 6px;
+                        &:nth-child(1) {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .header {
+            &__logo {
+                display: none;
+            }
+            &__contacts {
+                display: none;
+            }
+            &__nav-items {
+                position: fixed;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                left: -100%;
+                width: 50%;
+                height: 100vh;
+                padding: 20px 15px;
+                transition: 0.6s all;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                &_active {
+                    left: 0;
+                }
+                
+            }
+            &__nav-item {
+                padding-right: 0;
+                font-size: 20px;
+                margin-top: 10px;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        &__title {
+            margin-top: 57px;
+        }
+    }  
+}
