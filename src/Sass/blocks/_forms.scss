@@ -31,6 +31,7 @@
          height: 45px;
          border: 1px solid rgba(0, 0, 0, 0.21);
          border-radius: 18px;
+         outline: none;
       }
    }
    &_questions {
@@ -47,6 +48,8 @@
          font-family: Roboto;
          font-size: 13px;
          font-weight: 300;
+         border: 1px solid rgba(0, 0, 0, 0.21);
+         outline: none;
       }
    }
 
